@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li,
+i {
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  font-family: "Chakra Petch", sans-serif;
+  overflow: hidden;
+}
+
+/****************** Main Home Page **************************/
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  padding: 25px 60px;
+  width: 95%;
+}
+
+/* Cursor */
+
+.txt-type>.txt {
+  border-right: 0.1rem solid ghostwhite;
+}
+
+.header__bg-logo {
+  background: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 50%;
+  width: 5.7rem;
+  height: 5.7rem;
+  opacity: 0.9;
+  position: absolute;
+  left: 1em;
+}
+
+.logo {
+  color: ghostwhite;
+  background: #000;
+  padding: 76px 45px;
+  position: relative;
+  top: -3.8rem;
+  left: -3.5rem;
+  width: fit-content;
+  border-radius: 50%;
+  font-family: "Reey", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  background: -webkit-linear-gradient(rgb(57, 125, 214), #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.anime__logo {
+  display: none;
+  background: none;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.intro {
+  position: absolute;
+  top: 25%;
+  left: 4.5rem;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.intro__button {
+  width: 17rem;
+  height: 3rem;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  outline: none;
+
+  background: #43c6ac;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8ffae, #43c6ac);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8ffae, #43c6ac);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+
+.intro__button:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.links {
+  display: grid;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  border: 1px solid #000;
+}
+
+.linkedin {
+  background-color: #0072b0;
+}
+
+.github {
+  background-color: #000;
+}
+
+.email {
+  background-color: red;
+}
+
+.links a {
+  writing-mode: vertical-lr;
+  color: #fff;
+  font-size: 1em;
+
+  width: 2.5rem;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.email {
+  font-size: 1.1787rem;
+  margin: 0;
+  /* padding: 1.98rem; */
+  width: 2.7rem;
+}
+
+/****************** Main Projects Page *************************/
+
+.projects {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+
+  /* background: #67b26f; */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #4ca2cd, #67b26f); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to top, #4ca2cd, #67b26f); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects__header {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  padding: 25px 60px;
+  width: 95%;
+  text-align: center;
+}
+
+.projects__h1 {
+  color: #fff;
+}
+
+.projects__showcase {
+  position: relative;
+  top: 3em;
+  font-size: 1.5em;
+  margin: 2em auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.projects__showcase-h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project {
+  padding: 0;
+  margin: 0 1em;
+  width: 300px;
+  height: 300px;
+}
+
+/******************* Body Footer *******************************/
+.footer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.footer__link {
+  position: relative;
+  right: -40%;
+  background: gray;
+}
