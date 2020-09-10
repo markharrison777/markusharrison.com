@@ -41,12 +41,11 @@ body {
   position: absolute;
   top: 0;
   padding: 25px 60px;
-  width: 95%;
 }
 
 /* Cursor */
 
-.txt-type>.txt {
+.txt-type > .txt {
   border-right: 0.1rem solid ghostwhite;
 }
 
