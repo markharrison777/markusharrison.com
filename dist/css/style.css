@@ -70,7 +70,7 @@ body {
   left: -3.5rem;
   width: fit-content;
   border-radius: 50%;
-  font-family: "Reey", sans-serif;
+  font-family: "Reey", "sans-serif";
   font-size: 1.2rem;
   margin: 0;
   background: -webkit-linear-gradient(rgb(57, 125, 214), #eee);
