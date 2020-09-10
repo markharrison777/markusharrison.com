@@ -41,6 +41,7 @@ body {
   position: absolute;
   top: 0;
   padding: 25px 60px;
+  width: 100%;
 }
 
 /* Cursor */
@@ -57,7 +58,7 @@ body {
   height: 5.7rem;
   opacity: 0.9;
   position: absolute;
-  left: 1em;
+  left: 4.8em;
 }
 
 .logo {
@@ -183,7 +184,6 @@ body {
   position: absolute;
   top: 0;
   padding: 25px 60px;
-  width: 95%;
   text-align: center;
 }
 
