@@ -1,0 +1,29 @@
+{
+  "name": "markusharrison.com",
+  "version": "1.0.0",
+  "description": "My portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --w scss/main.scss -o css/main.min.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markharrison777/markusharrison.com.git"
+  },
+  "keywords": [
+    "Markus",
+    "Harrison",
+    "Portfolio",
+    "Site"
+  ],
+  "author": "Markus Harrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markharrison777/markusharrison.com/"
+  },
+  "homepage": "https://github.com/markharrison777/markusharrison.com",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
