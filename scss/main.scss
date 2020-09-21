@@ -22,6 +22,10 @@ body {
   line-height: 1.5;
   font-family: "Chakra Petch", sans-serif;
   overflow: hidden;
+
+  @media only screen and (max-width: 670px) {
+    background: black;
+  }
 }
 
 /****************** Main Home Page **************************/

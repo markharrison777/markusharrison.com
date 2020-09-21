@@ -41,23 +41,24 @@ body {
   position: absolute;
   top: 0;
   padding: 25px 60px;
-  width: 100%;
+  width: 95%;
 }
 
 /* Cursor */
+
 .txt-type>.txt {
   border-right: 0.1rem solid ghostwhite;
 }
 
 .header__bg-logo {
-  background: black;
+  background: rgb(0, 0, 0);
   padding: 15px;
   border-radius: 50%;
   width: 5.7rem;
   height: 5.7rem;
   opacity: 0.9;
   position: absolute;
-  left: 4.8em;
+  left: 1em;
 }
 
 .logo {
@@ -69,10 +70,10 @@ body {
   left: -3.5rem;
   width: fit-content;
   border-radius: 50%;
-  font-family: "Reey", "sans-serif";
+  font-family: "Reey", sans-serif;
   font-size: 1.2rem;
   margin: 0;
-  background: -webkit-linear-gradient(#397dd6, #eee);
+  background: -webkit-linear-gradient(rgb(57, 125, 214), #eee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -100,10 +101,13 @@ body {
   width: 17rem;
   height: 3rem;
   border-radius: 10px;
+
   font-family: inherit;
   font-size: 1rem;
   text-transform: uppercase;
+
   outline: none;
+
   background: #43c6ac;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #f8ffae, #43c6ac);
@@ -125,7 +129,7 @@ body {
   right: 0;
   top: 0;
   height: 100vh;
-  border: 1px solid #000;
+  border-left: 1px solid #fff;
 }
 
 .linkedin {
@@ -144,6 +148,7 @@ body {
   writing-mode: vertical-lr;
   color: #fff;
   font-size: 1em;
+
   width: 2.5rem;
   text-align: center;
   padding-right: 30px;
@@ -157,6 +162,7 @@ body {
 }
 
 /****************** Main Projects Page *************************/
+
 .projects {
   height: 100%;
   width: 100%;
@@ -177,6 +183,7 @@ body {
   position: absolute;
   top: 0;
   padding: 25px 60px;
+  width: 95%;
   text-align: center;
 }
 
@@ -225,5 +232,4 @@ body {
 .footer__link {
   position: relative;
   right: -40%;
-
 }
