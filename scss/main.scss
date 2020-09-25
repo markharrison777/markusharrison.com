@@ -76,7 +76,7 @@ body {
   font-size: 1.2rem;
   margin: 0;
   background: -webkit-linear-gradient(rgb(57, 125, 214), #eee);
-  -webkit-background-clip: text;
+  // -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media only screen and (max-width: 670px) {
