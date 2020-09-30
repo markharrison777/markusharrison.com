@@ -4,8 +4,8 @@
   "description": "My portfolio website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --w scss/main.scss -o /css/main.min.css "
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
