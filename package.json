@@ -4,7 +4,7 @@
   "description": "My portfolio website.",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass scss/main.scss css/main.min.css -w"
+    "sass": "sass --watch scss/main.scss:dist/css/main.min.css"
   },
   "repository": {
     "type": "git",
