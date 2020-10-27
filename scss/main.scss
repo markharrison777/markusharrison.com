@@ -63,7 +63,7 @@ body {
   height: 5.7rem;
   opacity: 0.9;
   position: absolute;
-  left: 4.8em;
+  left: 4.7em;
 }
 
 .logo {
@@ -75,18 +75,15 @@ body {
   left: -3.5rem;
   width: fit-content;
   border-radius: 50%;
-  font-family: "Reey", "sans-serif";
+  font-family: "Reey", sans-serif;
   font-size: 1.2rem;
   margin: 0;
   background: -webkit-linear-gradient(rgb(57, 125, 214), #eee);
-  // -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  @media only screen and (max-width: 670px) {
-    background: white;
-    display: none;
-  }
 }
+
+
 
 .anime__logo {
   display: none;
@@ -234,12 +231,12 @@ body {
 /******************* Body Footer *******************************/
 .footer {
   width: 100%;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   margin: 0 auto;
 }
 
 .footer__link {
   position: relative;
-  right: -50%;
+  right: -40%;
 }
