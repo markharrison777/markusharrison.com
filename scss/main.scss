@@ -22,10 +22,10 @@ body {
   line-height: 1.5;
   font-family: "Chakra Petch", sans-serif;
   overflow: hidden;
-
-  @media only screen and (max-width: 240px) and (max-height: 320px) {
-    min-width: 100%;
-    min-height: 100%;
+   // media query
+   @media only screen and (max-width: 670px) {
+    margin: 7em auto;
+    text-align: center;
   }
 }
 
@@ -38,11 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #home { width: 67%; }
-  #secondary { width: 30%; margin-left: 3%;}  
-}
+
 }
 
 .main__header {
