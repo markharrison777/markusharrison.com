@@ -1,0 +1,28 @@
+body {
+background-color: #000;
+color: #fff; 
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 10%;
+}
+
+.navbar{
+  width: 100%;
+  z-index: 9;
+}
+
+.navbar__h1 {
+  text-decoration: none;
+}
+
+.navbar__links ul li {
+  list-style-type: none;
+}
+
+
