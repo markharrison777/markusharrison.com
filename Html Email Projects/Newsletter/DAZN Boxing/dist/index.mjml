@@ -1,0 +1,198 @@
+<mjml>
+  <mj-head>
+    <mj-title>DAZN Newsletter</mj-title>
+    <mj-preview>Plus: PSG face Bayern Munich.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-text font-size="20px" line-height="1.5" color="#ffffff" />
+      <mj-section background-color="#000000" padding="0" />
+      <mj-button background-color="#fffa00" color="#000000" border-radius="40px" font-size="16px" font-weight="bold" inner-padding="20px 60px" />
+    </mj-attributes>
+
+    <mj-style> .btn:hover { opacity: 0.7; } a:hover { color: #fffa00 !important; } </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f4f6">
+    <!-- Top Yellow Divider -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://beefreefilestorage.optimove.net/images/001099/DAZN%20Template%20Assets/Divider_1312x10.jpg" alt="Yellow Top Divider" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero Image -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://beefreefilestorage.optimove.net/images/001655/16427/Ortiz%20Jr%20vs%20Lubin_1080x1080.jpg" alt="Ortiz vs Lubin" href="https://www.dazn.com/en-US/welcome" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero Text -->
+    <mj-section padding="18px 25px">
+      <mj-column>
+        <mj-text align="center" padding="0">
+          <p style="margin: 0 0 25px 0">Vergil Ortiz Jr. returns to defend his unbeaten record against Erickson Lubin in a high-stakes Texas showdown.</p>
+          <p style="margin: 0 0 25px 0">Exclusively with Spanish commentary.</p>
+          <p style="margin: 0">📅 Saturday | 8pm ET | 5pm PT</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Button -->
+    <mj-section padding="10px 25px">
+      <mj-column>
+        <mj-button href="https://www.dazn.com"> WATCH ON DAZN </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Spacer -->
+    <mj-section padding="15px 0">
+      <mj-column>
+        <mj-spacer height="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider Line -->
+    <mj-section padding="10px 20px">
+      <mj-column>
+        <mj-divider border-width="1px" border-color="#ffffff" width="90%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Section Heading: Upcoming fights -->
+    <mj-section padding="22px 25px">
+      <mj-column>
+        <mj-text align="center" font-size="40px" font-weight="bold" line-height="1.2" padding="0"> Upcoming fights </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- The Ring IV Image -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://beefreefilestorage.optimove.net/images/001655/16427/Ring%20IV.png" alt="The Ring" href="https://www.dazn.com/en-US/welcome" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- The Ring IV Text -->
+    <mj-section padding="18px 25px">
+      <mj-column>
+        <mj-text align="center" padding="0"> David Benavidez defends his title and Devin Haney is in action as The Ring IV lands on November 22. </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Buy Now Button -->
+    <mj-section padding="10px 25px">
+      <mj-column>
+        <mj-button href="https://www.dazn.com"> BUY NOW </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Spacer -->
+    <mj-section padding="15px 0">
+      <mj-column>
+        <mj-spacer height="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Face Off: Eubank vs Benn -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://beefreefilestorage.optimove.net/images/001655/16427/Eubank%20Benn%202%20round%20faceoff.png" alt="Face Off" href="https://www.dazn.com/en-US/welcome" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Face Off Text -->
+    <mj-section padding="18px 25px">
+      <mj-column>
+        <mj-text align="center" padding="0"> British rivals Chris Eubank Jr. and Conor Benn face off ahead of their rematch on November 15. </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Watch Now Button -->
+    <mj-section padding="10px 25px">
+      <mj-column>
+        <mj-button href="https://www.dazn.com"> WATCH ON DAZN </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider Line -->
+    <mj-section padding="10px 20px">
+      <mj-column>
+        <mj-divider border-width="1px" border-color="#ffffff" width="90%" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Section Heading: Soccer today -->
+    <mj-section padding="22px 25px">
+      <mj-column>
+        <mj-text align="center" font-size="40px" font-weight="bold" line-height="1.2" padding="0"> Soccer today </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- PSG vs Bayern Image -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://beefreefilestorage.optimove.net/images/001655/16427/PSG%2016x9.png" alt="Soccer" href="https://www.dazn.com/en-US/welcome" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- PSG vs Bayern Text -->
+    <mj-section padding="18px 25px">
+      <mj-column>
+        <mj-text align="center" padding="0"> Holders PSG welcome Bayern to Paris for another chapter in their unmissable European saga. </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Watch Button -->
+    <mj-section padding="10px 25px">
+      <mj-column>
+        <mj-button href="https://www.dazn.com"> WATCH ON DAZN </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Follow Us Section -->
+    <mj-section padding="25px">
+      <mj-column>
+        <mj-text align="center" font-size="30px" font-weight="bold" padding="0 0 30px 0"> Follow us </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Social Icons -->
+    <mj-section padding="30px 15px 40px">
+      <mj-column>
+        <mj-social font-size="16px" icon-size="32px" mode="horizontal" padding="0" align="center">
+          <mj-social-element name="youtube" href="https://www.youtube.com/@DAZNSPORT_" src="https://d3aaoo30se75mz.cloudfront.net/1099/2025_03_14_14_02_20/icon-social-yt-lgt-28x28-2x.png" background-color="transparent" />
+          <mj-social-element name="instagram" href="https://www.instagram.com/daznsport" src="https://d3aaoo30se75mz.cloudfront.net/1099/2025_03_14_14_02_21/icon-social-in-lgt-28x28-2x.png" background-color="transparent" />
+          <mj-social-element name="twitter" href="https://www.x.com/DAZN_Sport" src="https://d3aaoo30se75mz.cloudfront.net/1099/2025_03_14_14_02_21/icon-social-tw-lgt-28x28-2x.png" background-color="transparent" />
+          <mj-social-element name="facebook" href="https://www.facebook.com/DAZN" src="https://d3aaoo30se75mz.cloudfront.net/1099/2025_03_14_14_02_21/icon-social-fb-lgt-28x28-2x.png" background-color="transparent" />
+          <mj-social-element name="custom" href="https://www.tiktok.com/@daznsport" src="https://d3aaoo30se75mz.cloudfront.net/1099/2025_03_14_14_02_21/icon-social-tt-lgt-28x28-2x.png" background-color="transparent" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider Line -->
+    <mj-section padding="10px 0">
+      <mj-column>
+        <mj-divider border-width="1px" border-color="#ffffff" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="55px">
+      <mj-column>
+        <mj-text align="center" font-size="12px" line-height="1.5" padding="0">
+          <p style="margin: 0 0 12px 0">
+            This account is not monitored. Need any help? Visit our
+            <a href="https://www.dazn.com/en-US/welcome" style="color: #fff; text-decoration: underline">Help section</a> or contact us <a href="https://www.dazn.com/en-US/welcome" style="color: #fff; text-decoration: underline">here</a>.
+          </p>
+          <p style="margin: 0 0 12px 0">
+            <a href="https://www.dazn.com/en-US/welcome" style="color: #fff; text-decoration: underline">Click here</a> to update your preferences, or
+            <a href="https://www.dazn.com/en-US/welcome" style="color: #fff; text-decoration: underline">here</a> to unsubscribe from emails.
+          </p>
+          <p style="margin: 0">DAZN Limited, company number 09676399, 12 Hammersmith Grove, London, W6 7AP.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

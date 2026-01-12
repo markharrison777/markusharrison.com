@@ -1,0 +1,17 @@
+{
+  "name": "transactional",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "mjml index.mjml -o index1.html",
+    "watch": "mjml -w index.mjml -o index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mjml": "^4.16.1"
+  }
+}

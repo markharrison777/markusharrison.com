@@ -1,0 +1,242 @@
+<mjml>
+  <mj-head>
+    <mj-style> * { box-sizing: border-box; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; } </mj-style>
+    <mj-style inline="inline">
+      .header-menu { padding: 0; width: 100%;} .header-menu a {  text-align: center; text-decoration: none; color: #000000; font-weight: bolder; font-size:10px; } .shop-now { text-align: center; width: 100%; } .shop-btn {
+      color:#000000; background-color: transparent; } .footer-link {
+        text-decoration: underline; color: #fff;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#ffffff">
+    <mj-raw>
+      <!-- Header-->
+    </mj-raw>
+    <mj-include path="./components/header.mjml" />
+    <mj-raw>
+      <!-- END Header-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Hero Image-->
+    </mj-raw>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_hero.webp" target="_blank"/>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Hero Image-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Sneaker that...-->
+    </mj-raw>
+    <mj-wrapper css-class="shop-now">
+      <mj-section padding="40px 0px 20px 0px">
+        <mj-column width="100%">
+          <mj-text font-size="12px" font-weight="bold" letter-spacing="10px" align="center" padding="0">LET YOUR FEET BREATHE</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text align="center" font-size="45px" font-weight="bold" letter-spacing="-2px" padding="0">SNEAKERS THAT WON'T MAKE YOU SWEAT</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column width="70%">
+          <mj-text line-height="20px" font-size="14px">
+            <p align="center" padding="0" text-align="center">
+              If you’re clinging onto the last of the sunshine, then you need footwear that lets your feet breathe. Beat the heat with these breathable sneakers and hit the gym or the trails without breaking a sweat (your feet, that is).
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-button css-class="shop-btn" href="https://www.vivobarefoot.com" target="_blank" width="220px" background-color="transparent" color="#212121" border="1px solid #212121" font-weight="bold">SHOP NOW</mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-raw>
+      <!-- END Sneaker that...-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Primus Trail-->
+    </mj-raw>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_primus_trail.webp" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="75%">
+        <mj-text line-height="20px" font-size="14px">
+          <p align="center" padding="0" text-align="center">Slippy terrains don't need extra sweat. The Primus Trail Flow is durable, breathable, and has a 100% recycled mesh upper to keep agile feet cool and secure on uneven ground.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-button css-class="shop-btn" href="https://www.vivobarefoot.com" target="_blank" width="245px" background-color="transparent" color="#212121" border="1px solid #212121" font-weight="bold">PRIMUS TRAIL FLOW</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Primus Trail-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Sensus Slip-->
+    </mj-raw>
+    <mj-section padding-top="50px">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_sensus.webp" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="75%">
+        <mj-text line-height="20px" font-size="14px">
+          <p align="center" padding="0" text-align="center">Stay cool, even when the pavement’s hot. The Sensus Slip On Knit has a natural knitted upper for an engineered fit that feels like a glove for your feet as you walk.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-button css-class="shop-btn" href="https://www.vivobarefoot.com" target="_blank" width="245px" background-color="transparent" color="#212121" border="1px solid #212121" font-weight="bold">SENSUS SLIP ON KNIT</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Sensus Slip-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Primus Knit-->
+    </mj-raw>
+    <mj-section padding-top="50px">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_primus_knit.webp" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="75%">
+        <mj-text line-height="20px" font-size="14px">
+          <p align="center" padding="0" text-align="center">
+            Your gym towel might be sweaty, but your feet don’t have to be. Slip into the knitted sock of the Primus Lite Knit Natural - now created with a 92% Tencel™, 7% Hotmelt and 1% Roica upper - and instantly feel the benefit of fit.
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-button css-class="shop-btn" href="https://www.vivobarefoot.com" target="_blank" width="281px" background-color="transparent" color="#212121" border="1px solid #212121" font-weight="bold">PRIMUS LITE KNIT NATURAL</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Primus Knit-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Primus Lite-->
+    </mj-raw>
+    <mj-section padding-top="20px">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_primus_knit_blue.webp" />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="75%">
+        <mj-text line-height="20px" font-size="14px">
+          <p align="center" padding="0" text-align="center">Your barefoot training all-rounder, now even better. The Primus Lite is a workout favourite for a reason, and now our new 3.5 comes with even more recycled mesh materials.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-button css-class="shop-btn" href="https://www.vivobarefoot.com" target="_blank" width="245px" background-color="transparent" color="#212121" border="1px solid #212121" font-weight="bold">PRIMUS LITE 3.5</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Primus Lite-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Customer info-->
+    </mj-raw>
+    <mj-section padding="50px 0 0 0">
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/order.jpg" /
+          href="https://support.vivobarefoot.com/hc/en-us/categories/22263291020957-Ordering-and-Delivery-Information" target="_blank" 
+        padding="0">
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/returns.jpg" /
+          href="https://support.vivobarefoot.com/hc/en-us/categories/4651712738333-Returns-refunds" target="_blank"
+       padding="0">
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/refer.jpg" /
+          href="https://www.vivobarefoot.com/us/share" target="_blank"
+         padding="0">
+      </mj-column>
+      <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/contact.jpg" / 
+          href="https://support.vivobarefoot.com/hc/en-us" target="_blank"
+        padding="0">
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Customer info-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Vivo logo small-->
+    </mj-raw>
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_logo_small.webp" / padding="0" width="600px">
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Vivo logo small-->
+    </mj-raw>
+    <mj-raw>
+      <!-- FreeFeet-->
+    </mj-raw>
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/free_feet.webp" / padding="0" width="600px">
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END FreeFeet-->
+    </mj-raw>
+    <mj-raw>
+      <!-- Socials & Company Info-->
+    </mj-raw>
+    <mj-section background-color="#212121">
+      <mj-group>
+        <mj-column padding="0">
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_x.png" target="_blank" / padding="0" align="center" width="25px" height="auto">
+      </mj-column>
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_ig.png" target="_blank" padding="0" align="center" width="25px" height="auto">
+      </mj-column>
+      <mj-column>
+        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_fb.png"
+         padding="0" align="center" width="25px" height="auto">
+      </mj-column>
+      </mj-group>
+      <mj-column width="100%">
+        <mj-text color="#fff" font-size="10px" line-height="15px" align="center">
+          <p>
+            You're receiving this email because you have</br> 
+
+signed up to the <a class="footer-link" href="https://www.vivobarefoot.com/us/" text-decoration="underline" >VIVOBAREFOOTmailing list.</a></br>
+
+If you no longer wish to receive these emails please <a class="footer-link" href="https://vivobarefoot.com">unsubscribe.</a></br>
+
+<a class="footer-link" href="https://vivobarefoot.com">VIVOBAREFOOT</a> Ltd. 57-59 Neal Street, London, WC2H 9PP</br>
+
+Copyright © 2025 VIVOBAREFOOT, All rights reserved.
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!-- END Socials $ Company Info-->
+    </mj-raw>
+  </mj-body>
+</mjml>

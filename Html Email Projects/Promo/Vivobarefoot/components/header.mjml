@@ -1,0 +1,27 @@
+<mj-section css-class="header">
+  <mj-column>
+    <mj-image width="225px" height="auto" align="center" href="https://vivobarefoot.com" src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/vivo_logo.jpg" target="_blank" />
+  </mj-column>
+</mj-section>
+<mj-section css-class="header-menu" padding-left="50px">
+  <mj-column>
+    <mj-text padding-left="0px">
+      <a href="https://vivobarefoot.com/mens" padding-left="15px" target="_blank">MENS</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text padding-left="0px">
+      <a href="https://vivobarefoot.com/womens" target="_blank">WOMENS</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text padding-left="0px">
+      <a href="https://vivobarefoot.com/kids" target="_blank">KIDS</a>
+    </mj-text>
+  </mj-column>
+  <mj-column css-class="sus-link">
+    <mj-text padding-left="0px">
+      <a href="https://vivobarefoot.com/sustainability" target="_blank">SUSTAINABILITY</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
