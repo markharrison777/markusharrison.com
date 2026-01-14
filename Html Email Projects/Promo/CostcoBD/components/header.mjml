@@ -1,0 +1,57 @@
+<mj-raw>
+  <!-- Header -->
+</mj-raw>
+
+<mj-section css-class="header" padding="10px 0px 10px 0px">
+  <mj-column>
+    <mj-text
+      color="#737474"
+      font-family="Helvetica Neue, Arial, Helvetica, sans-serif;"
+      font-size="12px"
+      align="center"
+      padding="0px"
+    >
+      <a
+        href="https://costcobdpromo.netlify.app/"
+        style="color: #737474; text-decoration: underline"
+        >View in browser.</a
+      >
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-divider
+      padding="0"
+      style="line-height: 0; font-size: 0"
+      border-width="1px"
+      border-color="#e0e0e0"
+    />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0px">
+  <mj-column width="100%" align="center" padding="0">
+    <mj-image
+      alt="costcoBD_logo"
+      href="https://www.costcobusinessdelivery.com/"
+      style="align: center"
+      margin="0 auto"
+      target="_blank"
+      width="134px"
+      height="40px"
+      align="center"
+      src="https://www.costcobusinessdelivery.com/wcsstore/CostcoGLOBALSAS/images/logo-bd-us.png"
+    />
+  </mj-column>
+  <!-- <mj-column>
+    <mj-text color="#737474" font-family="Helvetica Neue, Arial, Helvetica, sans-serif;" font-size="12px" align="center" padding="0px"> &nbsp; </mj-text>
+  </mj-column> -->
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-divider padding="0" border-width="1px" border-color="#e0e0e0" />
+  </mj-column>
+</mj-section>
