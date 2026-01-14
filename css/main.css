@@ -1,190 +1,664 @@
+:root {
+  /* Brand Colors */
+  --primary: #2563eb; /* Bold Blue */
+  --primary-dark: #1e40af; /* Darker Blue */
+  --primary-light: #3b82f6; /* Lighter Blue */
+  --accent: #f59e0b; /* Amber */
+  --accent-dark: #d97706; /* Dark Amber */
+  --dark: #0f172a; /* Deep Slate */
+  --dark-secondary: #1e293b; /* Lighter Slate */
 
-    :root { color-scheme: light; }
-    html { 
-      scroll-behavior: smooth; 
-    }
-    html, body { height: 100%; }
-    body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+  /* Neutrals */
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-900: #18181b;
 
-    /**
-     * Fit-to-Width Text Technique
-     * Based on: https://kizu.dev/fit-to-width
-     * Uses registered custom properties, container queries, and math functions
-     * to make text fit the full width of its container
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-light) 100%
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-dark) 100%
+  );
+  --gradient-hero: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/**
+     * HEADER CUSTOMIZATION
      */
-    
-    /* Registered custom properties for the fit-to-width technique */
-    @property --captured-length {
-      syntax: "<length>";
-      initial-value: 0px;
-      inherits: true;
-    }
+header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
 
-    @property --captured-length2 {
-      syntax: "<length>";
-      initial-value: 0px;
-      inherits: true;
-    }
+/* Logo with gradient */
+header .inline-flex.h-9.w-9 {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
 
-    /* Main fit-to-width container */
-    .text-fit {
-      display: flex;
-      width: 100%;
-      container-type: inline-size;
+header .inline-flex.h-9.w-9:hover {
+  transform: rotate(5deg) scale(1.05);
+}
 
-      /* Support sentinel: 9999px when custom property is not registered, 0px when it is */
-      --captured-length: initial;
-      --support-sentinel: var(--captured-length, 9999px);
-    }
+/* Nav links with underline effect */
+header nav a {
+  position: relative;
+  color: var(--zinc-700);
+  transition: color 0.3s ease;
+}
 
-    /* Hide the duplicated text from screen readers and visually */
-    .text-fit > [aria-hidden] {
-      visibility: hidden;
-    }
+header nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
 
-    /* The visible text container */
-    .text-fit > :not([aria-hidden]) {
-      flex-grow: 1;
-      container-type: inline-size;
+header nav a:hover {
+  color: var(--primary);
+}
 
-      /* Capture the container's inline size as a custom property */
-      --captured-length: 100cqi;
-      --available-space: var(--captured-length);
-    }
+header nav a:hover::after {
+  width: 100%;
+}
 
-    .text-fit > :not([aria-hidden]) > * {
-      --support-sentinel: inherit;
-      --captured-length: 100cqi;
-      
-      /* Calculate the ratio: available space / (available space - captured length)
-       * Using tan(atan2()) to calculate the scaling ratio
-       */
-      --ratio: tan(atan2(
-        var(--available-space),
-        var(--available-space) - var(--captured-length)
-      ));
-      
-      /* Calculate font size with min and max bounds */
-      --font-size: clamp(
-        1em,
-        1em * var(--ratio),
-        var(--max-font-size, infinity * 1px) - var(--support-sentinel)
-      );
-      
-      inline-size: var(--available-space);
-    }
+/* CTA Button */
+header a[href="#contact"] {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
 
-    /* Apply to non-nested text-fit elements */
-    .text-fit > :not([aria-hidden]) > *:not(.text-fit) {
-      display: block;
-      font-size: var(--font-size);
+header a[href="#contact"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
 
-      /* Prevent text wrapping when container has width */
-      @container (inline-size > 0) {
-        white-space: nowrap;
-      }
-    }
-
-    /* Handle nested text-fit for optical sizing support */
-    .text-fit > :not([aria-hidden]) > *.text-fit {
-      --captured-length2: var(--font-size);
-      font-variation-settings:
-        'opsz'
-        tan(atan2(var(--captured-length2), 1px));
-    }
-
-    /**
-     * Skill Icons Hover Colors
-     * Adds brand-specific colors to icons on hover
+/**
+     * HERO SECTION
      */
-    
-    /* HTML5 - Orange */
-    .skill-icon-html5:hover img {
-      filter: brightness(0) saturate(100%) invert(56%) sepia(90%) saturate(3000%) hue-rotate(0deg) brightness(1.1);
-    }
-    
-    /* CSS - Blue */
-    .skill-icon-css:hover img {
-      filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1000%) hue-rotate(200deg) brightness(1.1);
-    }
-    
-    /* JavaScript - Yellow */
-    .skill-icon-js:hover img {
-      filter: brightness(0) saturate(100%) invert(89%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(1.1);
-    }
-    
-    /* Mailchimp - Orange/Yellow */
-    .skill-icon-mailchimp:hover img {
-      filter: brightness(0) saturate(100%) invert(67%) sepia(100%) saturate(1000%) hue-rotate(0deg) brightness(1.1);
-    }
-    
-    /* SendGrid - Blue */
-    .skill-icon-sendgrid:hover img {
-      filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1000%) hue-rotate(200deg) brightness(1.1);
-    }
-    
-    /* HubSpot - Orange */
-    .skill-icon-hubspot:hover img {
-      filter: brightness(0) saturate(100%) invert(67%) sepia(100%) saturate(1000%) hue-rotate(350deg) brightness(1.1);
-    }
-    
-    /* Salesforce - Blue */
-    .skill-icon-salesforce:hover img {
-      filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(1000%) hue-rotate(200deg) brightness(1.1);
-    }
-    
-    /* WordPress - Blue */
-    .skill-icon-wordpress:hover img {
-      filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1000%) hue-rotate(200deg) brightness(1.1);
-    }
-    
-    /* Google Analytics - Orange/Red */
-    .skill-icon-analytics:hover img {
-      filter: brightness(0) saturate(100%) invert(47%) sepia(100%) saturate(1000%) hue-rotate(350deg) brightness(1.1);
-    }
-    
-    /* Mailgun - Red */
-    .skill-icon-mailgun:hover img {
-      filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(1000%) hue-rotate(350deg) brightness(1.1);
-    }
-    
-    /* General hover effect for skill icon containers */
-    .skill-icon {
-      transition: all 0.3s ease;
-    }
-    
-    .skill-icon:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .skill-icon img {
-      transition: filter 0.3s ease;
-    }
+#work {
+  background: linear-gradient(180deg, var(--zinc-50) 0%, white 100%);
+}
 
-    /**
-     * Exit Intent Modal
-     * Shows when user tries to leave the page
+/* Oversized name with gradient */
+.text-fit {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Hero image border with gradient */
+#work .relative.overflow-hidden {
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    var(--gradient-primary) border-box;
+  transition: transform 0.3s ease;
+}
+
+#work .relative.overflow-hidden:hover {
+  transform: scale(1.01);
+}
+
+/**
+     * SKILLS SECTION
      */
-    #exitModal.hidden {
-      display: none !important;
-    }
+#skills h2 {
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+}
 
-    #exitModal:not(.hidden) {
-      display: flex !important;
-    }
+#skills h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
 
-    #exitModal > div {
-      animation: modalFadeIn 0.3s ease-out;
-    }
+/* Skill icons with color on hover */
+.skill-icon {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-    @keyframes modalFadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
+.skill-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+  border-color: var(--primary);
+}
+
+.skill-icon:hover::before {
+  opacity: 0.05;
+}
+
+/**
+     * ABOUT SECTION
+     */
+#about {
+  background: linear-gradient(135deg, var(--zinc-50) 0%, #eff6ff 100%);
+}
+
+#about h2 {
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+}
+
+#about h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* CTA Buttons in About */
+#about a[href="#projects"] {
+  background: var(--gradient-primary);
+  border: none;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+#about a[href="#projects"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+#about a[href^="mailto"] {
+  border-color: var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+#about a[href^="mailto"]:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/**
+     * PROJECTS SECTION
+     */
+#projects h2 {
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+}
+
+#projects h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+/* Project cards */
+#projects article {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#projects article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.375rem;
+  padding: 2px;
+  background: var(--gradient-primary);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#projects article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15);
+}
+
+#projects article:hover::before {
+  opacity: 1;
+}
+
+/* Project tags */
+#projects article span.inline-flex {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Project links */
+#projects article a[class*="external-link"] {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+#projects article a[class*="external-link"]:hover {
+  color: var(--primary-dark);
+  transform: translateX(4px);
+}
+
+/**
+     * CASE STUDIES SECTION
+     */
+#case-studies {
+  background: linear-gradient(135deg, #fffbeb 0%, var(--zinc-50) 100%);
+}
+
+#case-studies h2 {
+  color: var(--dark);
+  position: relative;
+  display: inline-block;
+}
+
+#case-studies h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+#case-studies h3 {
+  color: var(--dark);
+}
+
+/* Case study tags */
+#case-studies span.inline-flex {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* Case study links */
+#case-studies a[class*="arrow-right"] {
+  color: var(--primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#case-studies a[class*="arrow-right"]:hover {
+  color: var(--primary-dark);
+  transform: translateX(4px);
+}
+
+/* Stat badges */
+#case-studies .flex.items-center.gap-1\.5 {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/**
+     * FOOTER
+     */
+footer {
+  background: linear-gradient(180deg, var(--zinc-50) 0%, white 100%);
+}
+
+footer .inline-flex.h-10.w-10 {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+
+/* Social icons */
+footer a.inline-flex.h-9.w-9 {
+  border-color: var(--zinc-300);
+  transition: all 0.3s ease;
+}
+
+footer a.inline-flex.h-9.w-9:hover {
+  background: var(--gradient-primary);
+  border-color: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Footer CTA */
+footer a[class*="bg-zinc-900"] {
+  background: var(--gradient-primary);
+  border: none;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+footer a[class*="bg-zinc-900"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/**
+     * FIT-TO-WIDTH TEXT (keeping your existing code)
+     */
+@property --captured-length {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherits: true;
+}
+
+@property --captured-length2 {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherits: true;
+}
+
+.text-fit {
+  display: flex;
+  width: 100%;
+  container-type: inline-size;
+  --captured-length: initial;
+  --support-sentinel: var(--captured-length, 9999px);
+}
+
+.text-fit > [aria-hidden] {
+  visibility: hidden;
+}
+
+.text-fit > :not([aria-hidden]) {
+  flex-grow: 1;
+  container-type: inline-size;
+  --captured-length: 100cqi;
+  --available-space: var(--captured-length);
+}
+
+.text-fit > :not([aria-hidden]) > * {
+  --support-sentinel: inherit;
+  --captured-length: 100cqi;
+  --ratio: tan(
+    atan2(
+      var(--available-space),
+      var(--available-space) - var(--captured-length)
+    )
+  );
+  --font-size: clamp(
+    1em,
+    1em * var(--ratio),
+    var(--max-font-size, infinity * 1px) - var(--support-sentinel)
+  );
+  inline-size: var(--available-space);
+}
+
+.text-fit > :not([aria-hidden]) > *:not(.text-fit) {
+  display: block;
+  font-size: var(--font-size);
+  @container (inline-size > 0) {
+    white-space: nowrap;
+  }
+}
+
+.text-fit > :not([aria-hidden]) > *.text-fit {
+  --captured-length2: var(--font-size);
+  font-variation-settings: "opsz" tan(atan2(var(--captured-length2), 1px));
+}
+
+/**
+     * EXIT INTENT MODAL
+     */
+#exitModal.hidden {
+  display: none !important;
+}
+
+#exitModal:not(.hidden) {
+  display: flex !important;
+}
+
+#exitModal > div {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal close button */
+#closeModal,
+#closeModalBottom {
+  transition: all 0.3s ease;
+}
+
+#closeModal:hover {
+  background: var(--zinc-100);
+  transform: rotate(90deg);
+}
+
+#closeModalBottom {
+  background: var(--gradient-primary);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+#closeModalBottom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/**
+     * ADDITIONAL ENHANCEMENTS
+     */
+
+/* Smooth transitions for all interactive elements */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* Scrollbar styling (webkit browsers) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--zinc-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Focus states for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+  opacity: 0;
+}
+/* Elegant Hero Marquee */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-right: 80px;
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #2563eb 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 8s ease infinite;
+}
+.marquee-content .emoji {
+  font-size: 0.7em;
+  margin: 0 16px;
+  opacity: 0.9;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  -webkit-text-fill-color: initial;
+  background: none;
+}
+.marquee-content .separator {
+  margin: 0 24px;
+  opacity: 0.4;
+  font-size: 0.5em;
+  -webkit-text-fill-color: #2563eb;
+} /* Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+} /* Fade edges */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
+}
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
+} /* Responsive */
+@media (max-width: 768px) {
+  .marquee-content {
+    font-size: clamp(32px, 10vw, 48px);
+  }
+  .marquee-content .emoji {
+    font-size: 0.6em;
+    margin: 0 12px;
+  }
+  .marquee-content .separator {
+    margin: 0 16px;
+  }
+}

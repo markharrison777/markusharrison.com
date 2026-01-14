@@ -198,12 +198,19 @@
     <section id="work" class="relative">
       <div class="mx-auto max-w-7xl px-6">
         <!-- Oversized Name - Fit to Width -->
-        <h1 class="mt-8 leading-none font-semibold tracking-tight uppercase">
-          <span class="text-fit">
-            <span><span>Markus Harrison</span></span>
-            <span aria-hidden="true">Markus Harrison</span>
-          </span>
-        </h1>
+        <!-- Elegant Hero Marquee -->
+        <div class="marquee-container">
+          <div class="marquee-track"> <!-- First copy -->
+            <div class="marquee-content"> <span class="emoji">👋</span> <span>Welcome, I am Markus Harrison</span> <span
+                class="separator">•</span> <span class="emoji">📧</span> <span>Email Developer</span> <span
+                class="separator">•</span> <span class="emoji">✍️</span> <span>Content Editor</span> <span
+                class="separator">•</span> </div> <!-- Second copy (for seamless loop) -->
+            <div class="marquee-content"> <span class="emoji">👋</span> <span>Welcome, I am Markus Harrison</span> <span
+                class="separator">•</span> <span class="emoji">📧</span> <span>Email Developer</span> <span
+                class="separator">•</span> <span class="emoji">✍️</span> <span>Content Editor</span> <span
+                class="separator">•</span> </div>
+          </div>
+        </div>
 
         <!-- Feature Image with overlay text -->
         <div class="relative mt-8 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100">
@@ -384,9 +391,7 @@
             <a href="#newpage" target="_blank" rel="noopener noreferrer"
               class="relative overflow-hidden aspect-[2/3] block"
               onclick="posthog?.capture('project_clicked', {project_name: 'Aether Launch', project_type: 'image'});">
-              <img
-                src=""
-                alt="Minimal interface"
+              <img src="" alt="Minimal interface"
                 class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]">
             </a>
             <div class="p-5">
