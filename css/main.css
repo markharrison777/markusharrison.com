@@ -60,8 +60,12 @@ body {
      * HEADER CUSTOMIZATION
      */
 header {
-  background: rgba(255, 255, 255, 0.95) !important;
+  /* background: rgba(255, 255, 255, 0.95) !important; */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to right, #d7d2cc24 0%, #30435225 100%);
+  max-width: 80rem;
+  margin: 30px auto;
+  border-radius: 12px;
 }
 
 /* Logo with gradient */
@@ -257,10 +261,10 @@ header a[href="#contact"]:hover {
   background: var(--gradient-primary);
   border-radius: 2px;
 }
-
-.shopify-link {
-  color: #2c6cef;
+.about_me_link {
+  color: #2563eb;
   text-decoration: underline;
+  font-style: italic;
 }
 
 /* CTA Buttons in About */
@@ -283,7 +287,6 @@ header a[href="#contact"]:hover {
 }
 
 #about a[href^="mailto"]:hover {
-  background: var(--primary);
   color: white;
   transform: translateY(-2px);
 }
