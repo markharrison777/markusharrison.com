@@ -210,64 +210,58 @@
 
   <main>
     <!-- Hero -->
-    <section id="work" class="relative hero-gradient-bg">
-      <!-- Gradient overlay -->
-      <div class="gradient-overlay"></div>
-
-      <!-- Content wrapper -->
+    <section id="work" class="hero-gradient-bg">
       <div class="hero-content">
-        <div class="mx-auto max-w-7xl px-6 py-12">
-
-          <!-- Marquee -->
-          <div class="marquee-container">
-            <div class="marquee-track">
-              <!-- First copy -->
-              <div class="marquee-content">
-                <span class="emoji">👋</span>
-                <span>Welcome, I am Markus Harrison</span>
-                <span class="separator">•</span>
-                <span class="emoji">📧</span>
-                <span>Email Developer</span>
-                <span class="separator">•</span>
-                <span class="emoji">💻</span>
-                <span>Web Content Editor</span>
-                <span class="separator">•</span>
+        <div class="mx-auto max-w-7xl px-6 py-20 lg:py-32">
+          <div class="grid lg:grid-cols-2 gap-12 items-center"> <!-- Left: Text Content -->
+            <div class="space-y-8 order-2 lg:order-1">
+              <div class="space-y-4">
+                <div
+                  class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur rounded-full border border-blue-200 shadow-sm">
+                  <span class="pulse-dot"></span> <span class="text-sm font-medium text-zinc-700">Available for
+                    opportunities</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"> <span
+                    class="block text-zinc-900">Welcome,</span> <span class="block text-zinc-900">I am Markus,</span>
+                  <span
+                    class="block bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    an Email Developer </span>
+                </h1>
+                <p class="text-xl text-zinc-600 leading-relaxed max-w-xl"> & Web Content Specialist crafting responsive
+                  email experiences and managing dynamic web content across platforms. </p>
               </div>
-              <!-- Second copy -->
-              <div class="marquee-content">
-                <span class="emoji">👋</span>
-                <span>Welcome, I am Markus Harrison</span>
-                <span class="separator">•</span>
-                <span class="emoji">📧</span>
-                <span>Email Developer</span>
-                <span class="separator">•</span>
-                <span class="emoji">💻</span>
-                <span>Web Content Editor</span>
-                <span class="separator">•</span>
+              <div class="flex flex-wrap gap-4"> <a href="#projects"
+                  class="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 text-white font-medium shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition">
+                  View Projects <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg> </a> <a href="#contact"
+                  class="inline-flex items-center gap-2 rounded-md border-2 border-zinc-300 bg-white px-6 py-3 text-zinc-900 font-medium hover:bg-zinc-50 transition">
+                  Get in Touch </a> </div>
+              <div class="flex flex-wrap gap-3"> <span
+                  class="px-4 py-2 bg-white/80 backdrop-blur rounded-full text-sm font-medium text-zinc-700 border border-zinc-200">MJML</span>
+                <span
+                  class="px-4 py-2 bg-white/80 backdrop-blur rounded-full text-sm font-medium text-zinc-700 border border-zinc-200">HubSpot</span>
+                <span
+                  class="px-4 py-2 bg-white/80 backdrop-blur rounded-full text-sm font-medium text-zinc-700 border border-zinc-200">Klaviyo</span>
+                <span
+                  class="px-4 py-2 bg-white/80 backdrop-blur rounded-full text-sm font-medium text-zinc-700 border border-zinc-200">WordPress</span>
+                <span
+                  class="px-4 py-2 bg-white/80 backdrop-blur rounded-full text-sm font-medium text-zinc-700 border border-zinc-200">Shopify</span>
               </div>
+            </div> <!-- Right: Globe + Headshot -->
+            <div class="relative order-1 lg:order-2 flex items-center justify-center min-h-[400px]">
+              <div class="relative"> <canvas id="globe-canvas" width="400" height="400"></canvas>
+                <div class="globe-glow"></div>
+              </div>
+              <div class="headshot-overlay"> <img src="assets/img/headshot_main.webp" alt="Markus Harrison"
+                  class="w-full h-full object-cover" /> </div>
             </div>
           </div>
-
-          <!-- Content with Headshot on Right -->
-          <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mt-8 pb-12">
-
-            <!-- Left side - Space for future content -->
-            <div class="flex-1">
-              <!-- You can add intro text here later -->
-            </div>
-
-            <!-- Right side - Headshot -->
-            <div class="flex-shrink-0">
-              <div class="headshot-container">
-                <img src="assets/img/headshot_main.webp" alt="Markus Harrison - Email Developer" loading="eager">
-              </div>
-            </div>
-
-          </div>
-
         </div>
       </div>
     </section>
+
 
 
     <!-- Skills -->
@@ -388,11 +382,17 @@
           </div>
         </div>
         <div class="lg:col-span-6">
-          <div class="relative aspect-[4/3] overflow-hidden rounded-md border border-zinc-200 bg-white">
-            <img src="assets/img/harrison_fam.jpg" alt="Portrait" class="h-full w-full object-cover">
+          <div class="relative aspect-[4/3] overflow-hidden rounded-md border border-zinc-200 bg-white group">
+
+            <img src="assets/img/harrison_fam.jpg" alt="Portrait"
+              class="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700 group-hover:opacity-0">
+
+            <img src="assets/img/063a5a63-696d-400e-8d6e-41621eff9c6c~1.jpg" alt="Portrait"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+
           </div>
-          <p class="mt-4 text-sm text-zinc-500"></p>
         </div>
+
       </div>
     </section>
 
@@ -1006,7 +1006,9 @@
       }
     });
   </script>
-
+  <script>
+    /*Spinning Globe Animation*/ (function () { const canvas = document.getElementById('globe-canvas'); if (!canvas) return; const ctx = canvas.getContext('2d'); let rotation = 0; /*Generate particles*/ const particles = []; const numParticles = 800; for (let i = 0; i < numParticles; i++) { const theta = Math.random() * Math.PI * 2; const phi = Math.acos((Math.random() * 2) - 1); particles.push({ theta, phi }); } /*Animation loop*/ function animate() { const centerX = canvas.width / 2; const centerY = canvas.height / 2; const radius = canvas.width * 0.35; ctx.clearRect(0, 0, canvas.width, canvas.height); rotation += 0.003; particles.forEach(particle => { const x = radius * Math.sin(particle.phi) * Math.cos(particle.theta + rotation); const y = radius * Math.sin(particle.phi) * Math.sin(particle.theta + rotation); const z = radius * Math.cos(particle.phi); if (z > 0) { const scale = (z / radius) * 0.5 + 0.5; const size = 2 * scale; const alpha = scale * 0.8; const screenX = centerX + x; const screenY = centerY + y; const gradient = ctx.createRadialGradient(screenX, screenY, 0, screenX, screenY, size); gradient.addColorStop(0, `rgba(37, 99, 235, ${alpha})`); gradient.addColorStop(1, `rgba(124, 58, 237, ${alpha * 0.5})`); ctx.fillStyle = gradient; ctx.beginPath(); ctx.arc(screenX, screenY, size, 0, Math.PI * 2); ctx.fill(); } }); requestAnimationFrame(animate); } animate(); })(); 
+  </script>
 </body>
 
 </html>
