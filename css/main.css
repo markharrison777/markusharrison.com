@@ -226,7 +226,7 @@ header a[href="#contact"]:hover {
   inset: 0;
   background: radial-gradient(
     circle,
-    rgba(37, 99, 235, 0.2) 0%,
+    rgba(37, 100, 235, 0.19) 0%,
     transparent 70%
   );
   border-radius: 50%;
@@ -246,7 +246,7 @@ header a[href="#contact"]:hover {
 @media (max-width: 1024px) {
   .headshot-overlay {
     width: 160px;
-    height: 160px;
+    height: 360px;
     right: 50%;
     transform: translateX(50%);
     bottom: -80px;
@@ -258,7 +258,7 @@ header a[href="#contact"]:hover {
   height: 8px;
   border-radius: 50%;
   background: #10b981;
-  animation: pulse 2s ease-in-out infinite;
+  animation: pulse 1s ease-in-out infinite;
 }
 @keyframes pulse {
   0%,

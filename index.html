@@ -852,7 +852,7 @@
     </div>
   </div>
 
-  <script>
+  <!-- <script>
     // Lucide icons
     window.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
@@ -1005,7 +1005,7 @@
         // The modal should have already been shown by mouseleave events
       }
     });
-  </script>
+  </script> -->
   <script>
     /*Spinning Globe Animation*/ (function () { const canvas = document.getElementById('globe-canvas'); if (!canvas) return; const ctx = canvas.getContext('2d'); let rotation = 0; /*Generate particles*/ const particles = []; const numParticles = 800; for (let i = 0; i < numParticles; i++) { const theta = Math.random() * Math.PI * 2; const phi = Math.acos((Math.random() * 2) - 1); particles.push({ theta, phi }); } /*Animation loop*/ function animate() { const centerX = canvas.width / 2; const centerY = canvas.height / 2; const radius = canvas.width * 0.35; ctx.clearRect(0, 0, canvas.width, canvas.height); rotation += 0.003; particles.forEach(particle => { const x = radius * Math.sin(particle.phi) * Math.cos(particle.theta + rotation); const y = radius * Math.sin(particle.phi) * Math.sin(particle.theta + rotation); const z = radius * Math.cos(particle.phi); if (z > 0) { const scale = (z / radius) * 0.5 + 0.5; const size = 2 * scale; const alpha = scale * 0.8; const screenX = centerX + x; const screenY = centerY + y; const gradient = ctx.createRadialGradient(screenX, screenY, 0, screenX, screenY, size); gradient.addColorStop(0, `rgba(37, 99, 235, ${alpha})`); gradient.addColorStop(1, `rgba(124, 58, 237, ${alpha * 0.5})`); ctx.fillStyle = gradient; ctx.beginPath(); ctx.arc(screenX, screenY, size, 0, Math.PI * 2); ctx.fill(); } }); requestAnimationFrame(animate); } animate(); })(); 
   </script>
