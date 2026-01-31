@@ -143,7 +143,7 @@
 <body class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
   <!-- Header -->
   <header
-    class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/80 border-b border-zinc-200">
+    class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/80 border-b border-zinc-200 ">
     <div class="mx-auto max-w-7xl px-6">
       <div class="flex items-center justify-between py-4">
         <!-- Left: Logo + Desktop Nav -->
@@ -255,12 +255,13 @@
                 <div class="globe-glow"></div>
               </div>
               <div class="headshot-overlay"> <img src="assets/img/headshot_main.webp" alt="Markus Harrison"
-                  class="w-full h-full object-cover" /> </div>
+                  width="340px" height="auto" class="w-full h-full object-cover" /> </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
 
 
@@ -361,12 +362,12 @@
             bring a solid understanding of the marketing side of email, supported by certifications from Klaviyo Academy
             in Deliverability & Product, HubSpot Email Marketing, and Iterable.
           </p>
-          <p class="mt-6 text-zinc-600 leading-relaxed text-base">
+          <!-- <p class="mt-6 text-zinc-600 leading-relaxed text-base">
             I also have skill with platforms like Shopify. Checkout <a class="about_me_link"
               href="https://getmyvucs.myshopify.com/" target="_blank">getmyvucs.myshopify.com</a> password:
             <b>yesitispassword</b> this is a mock site inspired by my wife's reselling business. I also have future
             projects in the works with WordPress.!"
-          </p>
+          </p> -->
 
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <a href="#projects"
@@ -597,12 +598,10 @@
           </article>
 
           <!-- Card 6 -->
-          <!-- <article class="group rounded-md border border-zinc-200 bg-white overflow-hidden">
-            <a href="https://getmyvucs.myshopify.com/" target="_blank" rel="noopener noreferrer"
-              class="relative overflow-hidden aspect-[2/3] block"
+          <article class="group rounded-md border border-zinc-200 bg-white overflow-hidden">
+            <a href="" target="_blank" rel="noopener noreferrer" class="relative overflow-hidden aspect-[2/3] block"
               onclick="posthog?.capture('project_clicked', {project_name: 'getmyvucs', project_type: 'image'});">
-              <img src="assets/img/vucs_logo.webp" alt="vucs_logo"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]">
+              <img src="" alt="" class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]">
             </a>
             <div class="p-5">
               <div class="flex items-center gap-2">
@@ -613,13 +612,13 @@
                 <span
                   class="inline-flex rounded-full bg-zinc-100 text-zinc-700 text-xs font-medium px-2.5 py-1">E-Commerce</span>
               </div>
-              <a href="https://getmyvucs.myshopify.com/" target="_blank" rel="noopener noreferrer"
+              <a href="" target="_blank" rel="noopener noreferrer"
                 class="mt-3 text-lg font-semibold tracking-tight block hover:text-zinc-600 transition"
-                onclick="posthog?.capture('project_clicked', {project_name: 'getmyvucs', project_type: 'title'});">
-                <h3>VUCS</h3>
+                onclick="posthog?.capture('project_clicked', {project_name: '', project_type: 'title'});">
+                <h3></h3>
               </a>
               <p class="mt-2 text-sm text-zinc-600">A Shopify E-Commerce store, inspired by my wife's business.
-                <i><strong>Password: yesitispassword</strong></i>
+                <i><strong></strong></i>
               </p>
               <div class="mt-4 flex items-center justify-between">
                 <a href="#" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 hover:opacity-80">
@@ -631,13 +630,13 @@
                 </div>
               </div>
             </div>
-          </article> -->
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Case Studies -->
-    <!-- <section id="case-studies" class="py-16 sm:py-24 bg-zinc-50">
+    <section id="case-studies" class="py-16 sm:py-24 bg-zinc-50">
       <div class="mx-auto max-w-7xl px-6">
         <div class="flex items-end justify-between">
           <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Case Studies</h2>
@@ -648,9 +647,9 @@
           </a>
         </div>
 
-        <div class="mt-10 space-y-16"> -->
-    <!-- Case Study 1 -->
-    <!-- <article class="group">
+        <div class="mt-10 space-y-16">
+          <!-- Case Study 1 -->
+          <article class="group">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <a href="case-study/email-campaign/email.html"
                 class="relative overflow-hidden rounded-md border border-zinc-200 bg-white aspect-[4/3] block"
@@ -700,10 +699,10 @@
                 </div>
               </div>
             </div>
-          </article> -->
+          </article>
 
-    <!-- Case Study 2 -->
-    <!-- <article class="group">
+          <!-- Case Study 2 -->
+          <article class="group">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div class="order-2 lg:order-1">
                 <div class="flex items-center gap-2 mb-4">
@@ -756,7 +755,7 @@
           </article>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Footer / Contact -->
     <footer id="contact" class="border-t border-zinc-200 bg-zinc-50">
@@ -766,7 +765,8 @@
             <div
               class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-900 text-sm font-medium tracking-tight">
               MH</div>
-            <p class="mt-4 text-sm text-zinc-600 max-w-xs">Portfolio of Markus Harrison. Building elegant products with
+            <p class="mt-4 text-sm text-zinc-600 max-w-xs">Portfolio of Markus Harrison. Building elegant products
+              with
               precision and care.</p>
             <div class="mt-4 flex items-center gap-3">
               <a href="https://github.com/markharrison777" target="_blank"
@@ -790,7 +790,8 @@
               <li><a href="#projects" class="hover:text-zinc-900">Projects</a></li>
               <li><a href="#about" class="hover:text-zinc-900">About</a></li>
               <li><a href="#skills" class="hover:text-zinc-900">Skills</a></li>
-              <li><a href="assets/img/Markus_Harrison_resume (2).pdf" class=" hover:text-zinc-900">Download Resume</a>
+              <li><a href="assets/img/Markus_Harrison_resume (2).pdf" class=" hover:text-zinc-900">Download
+                  Resume</a>
               </li>
             </ul>
           </div>
@@ -852,7 +853,7 @@
     </div>
   </div>
 
-  <!-- <script>
+  <script>
     // Lucide icons
     window.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
@@ -1005,7 +1006,7 @@
         // The modal should have already been shown by mouseleave events
       }
     });
-  </script> -->
+  </script>
   <script>
     /*Spinning Globe Animation*/ (function () { const canvas = document.getElementById('globe-canvas'); if (!canvas) return; const ctx = canvas.getContext('2d'); let rotation = 0; /*Generate particles*/ const particles = []; const numParticles = 800; for (let i = 0; i < numParticles; i++) { const theta = Math.random() * Math.PI * 2; const phi = Math.acos((Math.random() * 2) - 1); particles.push({ theta, phi }); } /*Animation loop*/ function animate() { const centerX = canvas.width / 2; const centerY = canvas.height / 2; const radius = canvas.width * 0.35; ctx.clearRect(0, 0, canvas.width, canvas.height); rotation += 0.003; particles.forEach(particle => { const x = radius * Math.sin(particle.phi) * Math.cos(particle.theta + rotation); const y = radius * Math.sin(particle.phi) * Math.sin(particle.theta + rotation); const z = radius * Math.cos(particle.phi); if (z > 0) { const scale = (z / radius) * 0.5 + 0.5; const size = 2 * scale; const alpha = scale * 0.8; const screenX = centerX + x; const screenY = centerY + y; const gradient = ctx.createRadialGradient(screenX, screenY, 0, screenX, screenY, size); gradient.addColorStop(0, `rgba(37, 99, 235, ${alpha})`); gradient.addColorStop(1, `rgba(124, 58, 237, ${alpha * 0.5})`); ctx.fillStyle = gradient; ctx.beginPath(); ctx.arc(screenX, screenY, size, 0, Math.PI * 2); ctx.fill(); } }); requestAnimationFrame(animate); } animate(); })(); 
   </script>
