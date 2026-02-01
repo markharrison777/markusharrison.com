@@ -1,6 +1,6 @@
 :root {
   /* Brand Colors */
-  --primary: #2563eb; /* Bold Blue */
+  --primary: #586dd6; /* Bold Blue */
   --primary-dark: #1e40af; /* Darker Blue */
   --primary-light: #3b82f6; /* Lighter Blue */
   --accent: #f59e0b; /* Amber */
@@ -166,12 +166,19 @@ header a[href="#contact"]:hover {
   height: 70%;
   background: radial-gradient(
     circle,
-    rgba(105, 44, 210, 0.263) 0%,
+    rgba(58, 210, 44, 0.274) 0%,
     transparent 70%
   );
   border-radius: 50%;
   animation: blob2 18s ease-in-out infinite;
   z-index: 1;
+}
+
+.bg-clip-text {
+  font-family: "Mr Dafoe", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
 }
 
 /* Globe background positioning */
