@@ -236,7 +236,19 @@ header a[href="#contact"]:hover {
   filter: blur(40px);
   z-index: -1;
 }
-.headshot-overlay {
+
+.headshot-large-square {
+  width: 350px;
+  height: 550px;
+  border-radius: 14px; /* rounded-2xl */
+  border: 2px solid #878f891e;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(17, 45, 204, 0),
+    0 0 20px rgba(255, 255, 255, 0); /* Subtle white glow */
+  z-index: 20;
+}
+/* .headshot-overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -255,7 +267,7 @@ header a[href="#contact"]:hover {
     right: 50%;
     transform: translateX(50%);
     bottom: -80px;
-  }
+  } */
 }
 .pulse-dot {
   display: inline-block;
