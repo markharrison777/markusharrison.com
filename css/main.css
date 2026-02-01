@@ -248,6 +248,18 @@ header a[href="#contact"]:hover {
     0 0 20px rgba(255, 255, 255, 0); /* Subtle white glow */
   z-index: 20;
 }
+
+@media (max-width: 1087px) {
+  .headshot-large-square {
+    display: none;
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 100%;
+    width: 150px;
+    height: 250px;
+  }
+}
 /* .headshot-overlay {
   position: absolute;
   bottom: 0;
