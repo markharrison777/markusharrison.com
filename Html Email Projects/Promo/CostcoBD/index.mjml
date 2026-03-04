@@ -10,7 +10,7 @@
       color: red; text-decoration: none; } }
     </mj-style>
     <mj-style inline="inline"
-      >.main-wrapper { width: 696px; padding: 0; margin: 0 auto;} .header {
+      >.main-wrapper { width: 600px; padding: 0; margin: 0 auto;} .header {
       background-color: #ffffff; color: #737474; } .section-padding {
       padding-left: 30px; padding-right: 30px; } .footer { padding: 0; margin:
       0; background-size: 696px; width: 100%;} .footer-text { padding: 10px 0px
@@ -486,7 +486,7 @@
             href="https://www.costco.com/costco-app.html?EMID=B2C_2025_1227_TreasureHunt_USE&correlationId=801c0927-d222-4947-a931-454a232cbf58-0"
             target="_blank"
             src="https://mobilecontent.costco.com/staging/resource/img/22w0299/d-em-banner-22w0299-app.png"
-            width="696px"
+            width="600px"
             height="auto"
           />
         </mj-column>

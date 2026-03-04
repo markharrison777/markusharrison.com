@@ -21,7 +21,7 @@
         <mj-image src="https://target.scene7.com/is/image/Target/bullseye_email?scl=1&wid=150&hei=150&fmt=png-alpha" alt="Target Logo" width="50px" href="https://www.example.com" align="left" padding="0 0 0 20px" />
       </mj-column>
       <mj-column width="75%">
-        <mj-text align="right" color="#666666" font-size="16px" line-height="18px" padding="0 20px 0 10px">
+        <mj-text align="right" color="#666666" font-size="16px" line-height="18px" padding="0 0 0 20px">
           <a href="#" style="color: #666666; text-decoration: none">Order #912002926965877</a>
         </mj-text>
       </mj-column>
