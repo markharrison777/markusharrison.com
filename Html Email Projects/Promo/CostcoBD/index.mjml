@@ -9,8 +9,8 @@
       .footer-links { color: red; text-decoration: none; } .footer-links:hover{
       color: red; text-decoration: none; } }
     </mj-style>
-    <mj-style inline="inline"
-      >.main-wrapper { width: 600px; padding: 0; margin: 0 auto;} .header {
+    <mj-style inline="inline">
+      .main-wrapper { padding: 0; margin: 0 auto; }.header {
       background-color: #ffffff; color: #737474; } .section-padding {
       padding-left: 30px; padding-right: 30px; } .footer { padding: 0; margin:
       0; background-size: 600px; width: 100%;} .footer-text { padding: 10px 0px
@@ -31,7 +31,6 @@
         <!-- HERO HEADER LINKS SECTION -->
       </mj-raw>
       <mj-section padding="10px 0px 10px 0px" margin="0" width="100%">
-        <mj-group>
           <mj-column align="center" padding="5px 0px">
             <mj-image
               alt="Savings Event link"
@@ -98,7 +97,6 @@
               src="https://bfasset.costco-static.com/52U6WI5T/at/r8tr6hbg9zpk24sgvgr6cs5j/tr-btn-orderbyitem.jpg?auto=webp&format=jpg&width=1400"
             />
           </mj-column>
-        </mj-group>
       </mj-section>
       <mj-raw>
         <!-- END HERO HEADER LINKS SECTION -->
@@ -123,25 +121,15 @@
       <mj-raw>
         <!-- END MAIN HERO IMAGE -->
       </mj-raw>
-      <mj-section background-color="#EEEEEE" padding="0 30px">
+      <mj-section background-color="#fffffff" padding="50px 30px">
         <mj-raw>
           <!-- Help Your Business-->
         </mj-raw>
 
-        <mj-section
-          padding="50px 0 50px 0"
-          width="100%"
-          background-color="#eeeeee"
-        >
-          <mj-text
-            width="100%"
-            align="center"
-            font-size="36px"
-            font-weight="bold"
-            line-height="40px"
-            color="#000000"
-            >Discover How We Can Help Your Business</mj-text
-          >
+        <mj-column>
+          <mj-text align="center" font-size="28px" font-weight="700">
+            Discover How We Can Help Your Business
+          </mj-text>
         </mj-section>
         <!-- FoodService & Office Section -->
         <mj-section padding="40px 20px">
@@ -162,7 +150,7 @@
               font-size="24px"
               font-weight="400"
               line-height="20px"
-              color="#be5b68"
+              color="#003873"
               >Food Service
             </mj-text>
             <mj-text
@@ -212,7 +200,7 @@
               font-size="24px"
               font-weight="400"
               line-height="20px"
-              color="#003399"
+              color="#003873"
             >
               Office Supplies
             </mj-text>
@@ -267,7 +255,7 @@
               font-size="24px"
               font-weight="400"
               line-height="10px"
-              color="#008B7C"
+              color="#003873"
               line-height="20px"
             >
               C-Store
@@ -305,12 +293,12 @@
               align="center"
               font-size="16px"
               line-height="20px"
-              color="015fae"
+              color="#003873"
               target="_blank"
             >
               <a
                 href="https://customerservice.costcobusinessdelivery.com/app/answers/answer_view/a_id/7378/loc/en_US"
-                style="color: #015fae; target: _blank"
+                style="color: #003873; target: _blank"
                 >Need Help with Tax Exemption?</a
               >
             </mj-text>
@@ -391,7 +379,7 @@
             color="#ffffff"
           >
             Spend $250 or more
-            <span style="color: #e31837; font-size: 42px">FREE</span> delivery
+            <span style="color: #e31837; font-size: 36px">FREE</span> delivery
             on us.
           </mj-text>
           <mj-button
@@ -419,11 +407,10 @@
         padding="30px 0 30px 0"
         width="100%"
         background-color="#fffff"
-        border="10px solid #245880ff"
       >
         <mj-column>
           <mj-text
-            font-family="Trebuchet MSX"
+            font-family="Trebuchet MS"
             align="center"
             font-size="26px"
             line-height="40px"
