@@ -1,12 +1,12 @@
 <mj-raw>
   <!-- Footer -->
 </mj-raw>
-<mj-wrapper css-class="footer" padding="0px">
+<mj-wrapper css-class="footer" padding="0 0 30px 0" background-color="#f4f4f4">
   <mj-section padding="0">
     <mj-column>
       <mj-text
         css-class="footer-text"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif;"
+        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif"
         padding="12px 0px 12px 0px"
         font-size="12px"
         line-height="14px"
@@ -20,24 +20,7 @@
       </mj-text>
       <mj-text
         css-class="footer-text"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif;"
-        padding="20px 0px 0px 0px"
-        font-size="12px"
-        font-weight="bold"
-        line-height="14px"
-        color="#333333"
-      >
-        Costco Travel is available to Costco members residing in the United
-        States. Costco Travel is registered as a seller of travel in each of the
-        states listed: California registration number: CST 2054248-50 • Florida
-        registration number: ST 32555 • Hawaii registration number: TAR 5595 •
-        Iowa registration number: TA 620 • Washington registration number: WST
-        602042600. Registration as a California Seller of Travel does not
-        constitute approval by the state.
-      </mj-text>
-      <mj-text
-        css-class="footer-text"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif;"
+        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif"
         padding="20px 0px 0px 0px"
         font-size="12px"
         line-height="14px"
@@ -55,7 +38,7 @@
       </mj-text>
       <mj-text
         css-class="footer-text"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif;"
+        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif"
         padding="20px 0px 0px 0px"
         font-size="12px"
         line-height="14px"
@@ -66,14 +49,14 @@
         advertising announcements regarding special items and services. If you
         no longer want to receive these advertisements, please click
         <a
-          href="https://subscriptions.costco.com/lp/USUnsubR2?pid=v1.Pb8okXqkb73xOnpUZqseHrNTVRbcwqD0vxcvro_sEZeS8-SGNXlJWVOIEMJUI2FBNThJjlipigi3rFbh2DILlUTp7VAt56q3PIrfJFkZQ3Y-ckoE6O00HM54XIhU_Ck8q72CQrcGKZBVgXcXkmZPEDu648lrGsdhifKC92ql9lkcfN52MxezwJmUiZj4U3txcLU7EekKmobG05mmDDirNic1HP6TrYYttmX_6A&params=v1.PbrDDCEwwFF_FiJ7Ai3X-gErEeusBtOYiwlN_teN1Xr2MWxYVKkr75BxqZAMtzXDQ9XxVzARMftp1cTI-YXrDkn6uABHovotDRLF1iZ6indBXdC0lM_-kd-GFjENDSw-eHUj1-jw0vYhdmGV-NTXnwSxqWyVSbi9EgDETvsINu4kLUic9Xg7UvCh5MMqCpB1cLUtGzDWPvgHG9Engh3PruC4ujopQmejGrFaIAj35arC6-SUbUwh0zYxdUQQH6R7GUFl6dJWju65A4SfWr4pBJkWtaEbF9-WrijqbINMBfGbr_5GZaRe5ov96zU_fwRa5TXtsveKHweQPfap_n5BkYGkhl0pxteahKmVi5-yM1Ia1hATSXwYLb5b21j63X2qcHIUOry0OdF9gI_wvt__bzoPi04NNYHwnyJdURBlgjWCwbvSU-YZ5g3isiiqWhcr0Elabr1waxYuPu7kloRmz4LxAMo&correlationId=801c0927-d222-4947-a931-454a232cbf58-0"
+          href="{{unsubscribe_url}}"
           target="_blank"
           >unsubscribe</a
         >. Please DO NOT CLICK REPLY, as the email will not be read.
       </mj-text>
       <mj-text
         css-class="footer-text"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif;"
+        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif"
         padding="20px 0px 0px 0px"
         font-size="12px"
         line-height="14px"
@@ -89,8 +72,8 @@
         98124-1535 © 1998-2026 Costco Wholesale Corporation. All rights
         reserved.
         <a href="https://www.costco.com/privacy-policy.html" target="_blank"
-          >Your Privacy Rights</a
-        >
+          >Your Privacy Rights</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
         <a
           href="https://www.costco.com/terms-and-conditions-of-use.html"
           target="_blank"
