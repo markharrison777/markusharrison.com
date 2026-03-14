@@ -1,5 +1,7 @@
 <mj-raw><!-- Header --></mj-raw>
 
+
+</mj-section>
 <mj-section css-class="header" padding="8px 0">
   <mj-column>
     <mj-text
@@ -16,8 +18,13 @@
     </mj-text>
   </mj-column>
 </mj-section>
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-divider padding="0" border-width="1px" border-color="#e0e0e0" />
+  </mj-column>
+</mj-section>
 
-<mj-section padding="12px 0">
+<mj-section padding="5px 0">
   <mj-column padding="0" align="center">
     <mj-image
       alt="Costco Business Delivery"

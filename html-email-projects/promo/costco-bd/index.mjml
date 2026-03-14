@@ -30,73 +30,49 @@
       <mj-raw>
         <!-- HERO HEADER LINKS SECTION -->
       </mj-raw>
-      <mj-section padding="10px 0px 10px 0px" margin="0" width="100%">
-          <mj-column align="center" padding="5px 0px">
+      <mj-section padding="10px 0" margin="0">
+        <mj-group>
+          <mj-column align="center" padding="0 5px">
             <mj-image
               alt="Savings Event link"
               href="https://www.costcobusinessdelivery.com/savings-event.html"
-              style="align: center; display: block"
-              margin="0"
               padding="0"
-              font-size="0"
               border-radius="10px"
               target="_blank"
-              width="150px"
-              height="50px"
-              align="center"
-              src="https://bfasset.costco-static.com/52U6WI5T/at/hh7nq9xjpgt5gtv6hkkt4b3/tr-btn-event5.psd?auto=webp&format=jpg&width=1400"
-            />
+              width="130px"
+              src="https://bfasset.costco-static.com/52U6WI5T/at/hh7nq9xjpgt5gtv6hkkt4b3/tr-btn-event5.psd?auto=webp&format=jpg&width=1400"/>
           </mj-column>
-          <mj-column align="center" padding="5px 10px">
+          <mj-column align="center" padding="0 5px">
             <mj-image
               alt="Instant Savings link"
               href="https://www.costcobusinessdelivery.com/s?keyword=instant+savings&ref=toprow"
-              style="align: center; display: block"
-              margin="0"
               padding="0"
-              font-size="0"
               border-radius="10px"
               target="_blank"
-              width="150px"
-              height="50px"
-              align="center"
-              src="https://bfasset.costco-static.com/52U6WI5T/at/jcv3jxtz6447p7nt5q69v6/tr-btn-allsavings.jpg?auto=webp&format=jpg&width=1400"
-            />
+              width="130px"
+              src="https://bfasset.costco-static.com/52U6WI5T/at/jcv3jxtz6447p7nt5q69v6/tr-btn-allsavings.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
-        </mj-group>
-        <mj-group>
-          <mj-column align="center" padding="5px 10px">
+          <mj-column align="center" padding="0 5px">
             <mj-image
               alt="What's New link"
               href="https://www.costcobusinessdelivery.com/s?keyword=New&what%27s-new=new&refine=%7C%7CWhat_s_New_attr-NEW"
-              style="align: center; display: block"
-              margin="0"
               padding="0"
-              font-size="0"
               border-radius="10px"
               target="_blank"
-              width="150px"
-              height="50px"
-              align="center"
-              src="https://bfasset.costco-static.com/52U6WI5T/at/93wcqt5mwhrbv6q7wgpnttnq/tr-btn-whatsnew.jpg?auto=webp&format=jpg&width=1400"
-            />
+              width="130px"
+              src="https://bfasset.costco-static.com/52U6WI5T/at/93wcqt5mwhrbv6q7wgpnttnq/tr-btn-whatsnew.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
-          <mj-column align="center" padding="5px 0px">
+          <mj-column align="center" padding="0 5px">
             <mj-image
               alt="OBIN link"
               href="https://www.costcobusinessdelivery.com/OrderByItemsDisplayViewBD?ref=toprow"
-              style="align: center; display: block"
-              margin="0"
               padding="0"
-              font-size="0"
               border-radius="10px"
               target="_blank"
-              width="150px"
-              height="50px"
-              align="center"
-              src="https://bfasset.costco-static.com/52U6WI5T/at/r8tr6hbg9zpk24sgvgr6cs5j/tr-btn-orderbyitem.jpg?auto=webp&format=jpg&width=1400"
-            />
+              width="130px"
+              src="https://bfasset.costco-static.com/52U6WI5T/at/r8tr6hbg9zpk24sgvgr6cs5j/tr-btn-orderbyitem.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
+        </mj-group>
       </mj-section>
       <mj-raw>
         <!-- END HERO HEADER LINKS SECTION -->
@@ -321,7 +297,7 @@
               font-size="24px"
               font-weight="400"
               line-height="10px"
-              color="#34B458"
+              color="#003873"
               line-height="20px"
             >
               Volume Sales
