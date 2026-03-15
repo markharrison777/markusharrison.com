@@ -1,22 +1,22 @@
 <mjml>
   <mj-head>
     <mj-style>
-      * { box-sizing: border-box; } .link-color:hover { font-weight: bold;
-      text-decoration: underline; } .small-link-color:hover { font-weight: bold;
-      color: #000000; text-decoration: underline; } .footer-links { color: #000;
-      text-decoration: none; } .footer-links:hover { color: #000000;
-      text-decoration: none; } 
-      @media only screen and (max-width: 600px) {
-    .main-wrapper,
-    .content-background {
-      width: 100% !important;
-      max-width: 100% !important;
+    * { box-sizing: border-box; }
+    .link-color:hover { font-weight: bold; text-decoration: underline; }
+    .small-link-color:hover { font-weight: bold; color: #000000; text-decoration: underline; }
+    .footer-links { color: #000; text-decoration: none; }
+    .footer-links:hover { color: #000000; text-decoration: none; }
+    @media only screen and (max-width: 480px) {
+      .footer-links { color: red; text-decoration: none; }
+      .footer-links:hover { color: red; text-decoration: none; }
+    }
+    @media only screen and (max-width: 600px) {
+      .main-wrapper,
+      .content-background {
+        width: 100% !important;
+        max-width: 100% !important;
       }
     }
-      @media only screen and (max-width:480px) {
-      .footer-links { color: red; text-decoration: none; } .footer-links:hover{
-      color: red; text-decoration: none; } 
-      }
     </mj-style>
     <mj-style inline="inline">
       .main-wrapper { 
