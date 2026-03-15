@@ -1,7 +1,7 @@
 <mj-raw>
   <!-- Footer -->
 </mj-raw>
-<mj-wrapper css-class="footer" padding="0 0 30px 0" background-color="#f4f4f4">
+<mj-wrapper css-class="footer" padding="0px 0px 30px 10px" background-color="#f4f4f4">
   <mj-section padding="0">
     <mj-column>
       <mj-text

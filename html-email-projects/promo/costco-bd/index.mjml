@@ -16,6 +16,9 @@
         width: 100% !important;
         max-width: 100% !important;
       }
+      .footer {
+        padding: 0px 10px;
+      }
     }
     </mj-style>
     <mj-style inline="inline">
@@ -62,9 +65,9 @@
       <mj-raw>
         <!-- HERO HEADER LINKS SECTION -->
       </mj-raw>
-      <mj-section padding="10px 0" margin="0">
+      <mj-section padding="10px 0" width="100%" font-size="0" margin="0">
         <mj-group>
-          <mj-column align="center" padding="0px 2px">
+          <mj-column align="center" padding="0px 5px">
             <mj-image
               alt="Savings Event link"
               href="https://www.costcobusinessdelivery.com/savings-event.html"
