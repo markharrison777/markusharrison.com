@@ -64,14 +64,14 @@
       </mj-raw>
       <mj-section padding="10px 0" margin="0">
         <mj-group>
-          <mj-column align="center" padding="0 5px">
+          <mj-column align="center" padding="0px 2px">
             <mj-image
               alt="Savings Event link"
               href="https://www.costcobusinessdelivery.com/savings-event.html"
               padding="0"
               border-radius="10px"
               target="_blank"
-              width="130px"
+              width="120px"
               src="https://bfasset.costco-static.com/52U6WI5T/at/hh7nq9xjpgt5gtv6hkkt4b3/tr-btn-event5.psd?auto=webp&format=jpg&width=1400"/>
           </mj-column>
           <mj-column align="center" padding="0 5px">
@@ -81,7 +81,7 @@
               padding="0"
               border-radius="10px"
               target="_blank"
-              width="130px"
+              width="120px"
               src="https://bfasset.costco-static.com/52U6WI5T/at/jcv3jxtz6447p7nt5q69v6/tr-btn-allsavings.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
           <mj-column align="center" padding="0 5px">
@@ -91,7 +91,7 @@
               padding="0"
               border-radius="10px"
               target="_blank"
-              width="130px"
+              width="120px"
               src="https://bfasset.costco-static.com/52U6WI5T/at/93wcqt5mwhrbv6q7wgpnttnq/tr-btn-whatsnew.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
           <mj-column align="center" padding="0 5px">
@@ -101,7 +101,7 @@
               padding="0"
               border-radius="10px"
               target="_blank"
-              width="130px"
+              width="120px"
               src="https://bfasset.costco-static.com/52U6WI5T/at/r8tr6hbg9zpk24sgvgr6cs5j/tr-btn-orderbyitem.jpg?auto=webp&format=jpg&width=1400"/>
           </mj-column>
         </mj-group>
