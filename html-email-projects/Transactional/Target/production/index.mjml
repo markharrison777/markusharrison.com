@@ -17,11 +17,11 @@
   <mj-body background-color="#feffff">
     <!-- HEADER SECTION -->
     <mj-section padding="10px 0">
-      <mj-column width="25%">
-        <mj-image src="https://target.scene7.com/is/image/Target/bullseye_email?scl=1&wid=150&hei=150&fmt=png-alpha" alt="Target Logo" width="50px" href="https://www.example.com" align="left" padding="0 0 0 20px" />
+      <mj-column width="20%" vertical-align="middle">
+        <mj-image src="https://target.scene7.com/is/image/Target/bullseye_email?scl=1&wid=150&hei=150&fmt=png-alpha" alt="Target Logo" width="50px" href="https://www.example.com" align="left" padding="0 0 0 15px" />
       </mj-column>
-      <mj-column width="75%">
-        <mj-text align="right" color="#666666" font-size="16px" line-height="18px" padding="0 0 0 20px">
+      <mj-column width="80%" vertical-align="middle">
+        <mj-text align="right" color="#666666" font-size="14px" line-height="18px" padding="0 15px 0 0">
           <a href="#" style="color: #666666; text-decoration: none">Order #912002926965877</a>
         </mj-text>
       </mj-column>
@@ -53,10 +53,10 @@
 
     <!-- Step 1: Let us know you are coming -->
     <mj-section padding="0 0 25px 0">
-      <mj-column width="10%" vertical-align="top">
+      <mj-column width="15%" vertical-align="top">
         <mj-image src="https://target.scene7.com/is/image/Target/APPicon2x?scl=1&fmt=png-alpha" alt="hand holding phone with Target app" width="50px" padding="15px 0 0 0" />
       </mj-column>
-      <mj-column width="90%" vertical-align="top">
+      <mj-column width="85%" vertical-align="top">
         <mj-text padding="15px 0 0 15px">
           <h2 style="font-size: 14px; font-weight: bold; line-height: 21px; color: #333333; margin: 0">Let us know you are coming</h2>
           <p style="color: #333333; font-size: 14px; line-height: 21px; padding-top: 10px; margin: 0">Give us a heads up when you leave so we can be ready and waiting.</p>
@@ -67,10 +67,10 @@
 
     <!-- Step 2: Drive to Cedar Hill -->
     <mj-section padding="0 0 25px 0">
-      <mj-column width="10%" vertical-align="top">
+      <mj-column width="15%" vertical-align="top">
         <mj-image src="https://target.scene7.com/is/image/Target/DUicon2x?scl=1&fmt=png-alpha" alt="car" width="50px" padding="15px 0 0 0" />
       </mj-column>
-      <mj-column width="90%" vertical-align="top">
+      <mj-column width="85%" vertical-align="top">
         <mj-text padding="15px 0 0 15px">
           <h2 style="font-size: 14px; font-weight: bold; line-height: 21px; color: #333333; margin: 0">Then drive to Cedar Hill</h2>
           <p style="color: #333333; font-size: 14px; line-height: 21px; padding-top: 10px; margin: 0">Park in a Drive Up spot and follow the prompts in the app.</p>
@@ -106,10 +106,10 @@
 
     <!-- Step 3: Drive off and enjoy -->
     <mj-section padding="0 0 25px 0">
-      <mj-column width="10%" vertical-align="top">
+      <mj-column width="15%" vertical-align="top">
         <mj-image src="https://target.scene7.com/is/image/Target/hearticon2x?scl=1&fmt=png-alpha" alt="Red heart icon" width="50px" padding="15px 0 0 0" />
       </mj-column>
-      <mj-column width="90%" vertical-align="top">
+      <mj-column width="85%" vertical-align="top">
         <mj-text padding="15px 0 0 15px">
           <h2 style="font-size: 14px; font-weight: bold; line-height: 21px; color: #333333; margin: 0">Drive off and enjoy your purchase</h2>
           <p style="color: #333333; font-size: 14px; line-height: 21px; padding-top: 10px; margin: 0">
