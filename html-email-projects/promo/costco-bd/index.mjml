@@ -117,11 +117,9 @@
           <mj-image
             href="https://www.costcobusinessdelivery.com/companyoverview.html"
             target="_blank"
-            width="600px"
+            width="100%"
             padding="0"
-            margin="0"
             font-size="0"
-            src="https://cdn.bfldr.com/52U6WI5T/at/pvr98gwghb4zpcw8jsn4s75z/lp-companyoverview-hero.jpg?auto=webp&format=jpg"
             style="src: https://cdn.bfldr.com/52U6WI5T/at/pvr98gwghb4zpcw8jsn4s75z/lp-companyoverview-hero.jpg?auto=webp&format=jpg"
           />
         </mj-column>
@@ -481,7 +479,7 @@
             href="https://www.costco.com/costco-app.html?EMID=B2C_2025_1227_TreasureHunt_USE&correlationId=801c0927-d222-4947-a931-454a232cbf58-0"
             target="_blank"
             src="https://mobilecontent.costco.com/staging/resource/img/22w0299/d-em-banner-22w0299-app.png"
-            width="600px"
+            width="100%"
             height="auto"
           />
         </mj-column>
