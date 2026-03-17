@@ -279,10 +279,11 @@
           padding="15px 0 0 0"
         />
       </mj-column>
-      <mj-column width="85%" vertical-align="top">
-        <mj-text padding="15px 0 0 15px">
+      <mj-column width="100%" vertical-align="top">
+        <mj-text padding="15px 0 15px 15px">
           <h2
             style="
+              text-align: center;
               font-size: 14px;
               font-weight: bold;
               line-height: 21px;
@@ -338,36 +339,28 @@
 
     <!-- Product Item -->
     <mj-section padding="10px 0 0 0">
-      <mj-column width="40%" vertical-align="top">
-        <mj-image
-          src="https://target.scene7.com/is/image/Target/GUEST_11dae657-1e03-4d57-925c-56ca48b58890"
-          alt="Sprayway Glass Cleaner"
-          width="175px"
-          href="#"
-          padding="0 35px 15px 0"
-        />
-      </mj-column>
-      <mj-column width="60%" vertical-align="top">
-        <mj-text padding="20px 0 15px 0">
-          <h2
-            style="
-              font-size: 18px;
-              font-weight: bold;
-              line-height: 27px;
-              color: #333333;
-              margin: 0;
-            "
-          >
-            <a href="#" style="color: #333333; text-decoration: none">
-              Sprayway Glass Cleaner Ammonia Free Aerosol - 19oz
-            </a>
-          </h2>
-          <p style="margin: 5px 0 0 0; font-size: 15px; line-height: 24px">
-            Qty: 1
-          </p>
-        </mj-text>
-      </mj-column>
-    </mj-section>
+  <mj-column width="100%" vertical-align="top">
+    <mj-image
+      src="https://target.scene7.com/is/image/Target/GUEST_11dae657-1e03-4d57-925c-56ca48b58890"
+      alt="Sprayway Glass Cleaner"
+      width="175px"
+      href="#"
+      align="center"
+      padding="0 0 15px 0"
+    />
+    <mj-text align="center" padding="0 20px 15px 20px">
+      <h2 style="font-size:18px; font-weight:bold; line-height:27px;
+                 color:#333333; margin:0;">
+        <a href="#" style="color:#333333; text-decoration:none;">
+          Sprayway Glass Cleaner Ammonia Free Aerosol - 19oz
+        </a>
+      </h2>
+      <p style="margin:5px 0 0 0; font-size:15px; line-height:24px;">
+        Qty: 1
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
 
     <!-- Footer Divider -->
     <mj-section padding="15px 0 0 0">
@@ -378,81 +371,39 @@
 
     <!-- Footer Links -->
     <mj-section padding="30px 0 0 0">
-      <mj-group>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none">Help</a>
-          </mj-text>
-        </mj-column>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none"
-              >Returns</a
-            >
-          </mj-text>
-        </mj-column>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none"
-              >Contact</a
-            >
-          </mj-text>
-        </mj-column>
-      </mj-group>
-      <mj-group>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none"
-              >Find a store</a
-            >
-          </mj-text>
-        </mj-column>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none"
-              >Terms of use</a
-            >
-          </mj-text>
-        </mj-column>
-        <mj-column>
-          <mj-text
-            align="center"
-            font-size="14px"
-            line-height="16px"
-            padding="0 25px"
-          >
-            <a href="#" style="color: #333333; text-decoration: none"
-              >Privacy</a
-            >
-          </mj-text>
-        </mj-column>
-      </mj-group>
-    </mj-section>
+  <mj-group>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Help</a>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Returns</a>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Contact</a>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Find a store</a>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Terms of use</a>
+      </mj-text>
+    </mj-column>
+    <mj-column>
+      <mj-text align="center" font-size="14px" padding="0 10px 8px 10px">
+        <a href="#" style="color:#333333; text-decoration:none;">Privacy</a>
+      </mj-text>
+    </mj-column>
+  </mj-group>
+</mj-section>
 
     <!-- Footer Target.com -->
     <mj-section padding="30px 0 0 0">
