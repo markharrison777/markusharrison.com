@@ -157,27 +157,41 @@
       <!-- Customer info-->
     </mj-raw>
     <mj-section padding="50px 0 0 0">
-      <mj-column>
-        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/order.jpg" /
-          href="https://support.vivobarefoot.com/hc/en-us/categories/22263291020957-Ordering-and-Delivery-Information" target="_blank" 
-        padding="0">
-      </mj-column>
-      <mj-column padding="0">
-        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/returns.jpg" /
-          href="https://support.vivobarefoot.com/hc/en-us/categories/4651712738333-Returns-refunds" target="_blank"
-       padding="0">
-      </mj-column>
-      <mj-column padding="0">
-        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/refer.jpg" /
-          href="https://www.vivobarefoot.com/us/share" target="_blank"
-         padding="0">
-      </mj-column>
-      <mj-column padding="0">
-        <mj-image src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/contact.jpg" / 
-          href="https://support.vivobarefoot.com/hc/en-us" target="_blank"
-        padding="0">
-      </mj-column>
-    </mj-section>
+  <mj-group>
+    <mj-column padding="0">
+      <mj-image
+        src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/order.jpg"
+        href="https://support.vivobarefoot.com/hc/en-us/categories/22263291020957-Ordering-and-Delivery-Information"
+        target="_blank"
+        padding="0"
+      />
+    </mj-column>
+    <mj-column padding="0">
+      <mj-image
+        src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/returns.jpg"
+        href="https://support.vivobarefoot.com/hc/en-us/categories/4651712738333-Returns-refunds"
+        target="_blank"
+        padding="0"
+      />
+    </mj-column>
+    <mj-column padding="0">
+      <mj-image
+        src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/refer.jpg"
+        href="https://www.vivobarefoot.com/us/share"
+        target="_blank"
+        padding="0"
+      />
+    </mj-column>
+    <mj-column padding="0">
+      <mj-image
+        src="https://raw.githubusercontent.com/markharrison777/vivobarefoot-email-imgs/refs/heads/main/contact.jpg"
+        href="https://support.vivobarefoot.com/hc/en-us"
+        target="_blank"
+        padding="0"
+      />
+    </mj-column>
+  </mj-group>
+</mj-section>
     <mj-raw>
       <!-- END Customer info-->
     </mj-raw>
