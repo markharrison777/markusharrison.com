@@ -128,17 +128,10 @@
   <!-- PostHog Analytics -->
   <script>
     !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
-    // Initialize PostHog - Replace 'YOUR_PROJECT_API_KEY' with your actual PostHog API key
-    posthog.init('YOUR_PROJECT_API_KEY', {
-      api_host: 'https://us.i.posthog.com', // Change to your PostHog instance URL if different
-      loaded: function (posthog) {
-        // Track initial page view
-        posthog.capture('$pageview', {
-          page_title: document.title,
-          page_url: window.location.href,
-          page_type: 'home'
-        });
-      }
+    posthog.init('phc_q5AtTwOssc323UGJhQLCC3WSW4wcYVHXE5tLsoIOKvx', {
+      api_host: 'https://us.i.posthog.com',
+      defaults: '2026-01-30',
+      capture_exceptions: true,
     });
   </script>
 </head>
@@ -160,7 +153,8 @@
             <a href="#projects" class="hover:text-zinc-900 transition">Portfolio</a>
             <a href="#about" class="hover:text-zinc-900 transition">About Me</a>
             <!-- <a href="#projects" class="hover:text-zinc-900 transition">Latest Work</a> -->
-            <a href="assets/img/Markus_Harrison_resume (3).pdf" target="_blank" class="hover:text-zinc-900 transition">
+            <a href="assets/img/Markus_Harrison_resume (3).pdf" target="_blank" class="hover:text-zinc-900 transition"
+              onclick="posthog?.capture('resume_downloaded', {location: 'desktop_nav'});">
               <span>Download Resume</span>
             </a>
           </nav>
@@ -171,7 +165,8 @@
             class="text-xs font-medium text-zinc-600 tracking-tight hover:text-zinc-900 transition">mark_harrison777@yahoo.com
           </a> -->
           <a href="#contact"
-            class="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-3.5 py-2 text-sm font-medium tracking-tight text-zinc-900 hover:bg-zinc-50 transition">
+            class="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-3.5 py-2 text-sm font-medium tracking-tight text-zinc-900 hover:bg-zinc-50 transition"
+            onclick="posthog?.capture('contact_initiated', {location: 'header_nav'});">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send"
               class="lucide lucide-send h-4 w-4">
@@ -203,7 +198,8 @@
           <a href="#work" class="hover:text-zinc-900 transition">Home</a>
           <a href="#about" class="hover:text-zinc-900 transition">My Story</a>
           <a href="#projects" class="hover:text-zinc-900 transition">Portfolio</a>
-          <a href="assets/img/Markus_Harrison_resume (3).pdf" target="_blank" class="hover:text-zinc-900 transition">
+          <a href="assets/img/Markus_Harrison_resume (3).pdf" target="_blank" class="hover:text-zinc-900 transition"
+            onclick="posthog?.capture('resume_downloaded', {location: 'mobile_nav'});">
             <span>Download Resume</span>
           </a>
           <!-- <a href="#contact"
@@ -260,7 +256,8 @@
               <div class="flex flex-wrap gap-4">
                 <a href="#projects"
                   class="inline-flex items-center gap-2 rounded-md px-6 py-3 font-medium shadow-lg transition"
-                  style="background: var(--color-2); color: var(--color-1); box-shadow: 0 1px 7px rgba(5, 38, 251, 0.957);">
+                  style="background: var(--color-2); color: var(--color-1); box-shadow: 0 1px 7px rgba(5, 38, 251, 0.957);"
+                  onclick="posthog?.capture('hero_cta_clicked', {cta_label: 'View Projects'});">
                   View Projects
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -268,7 +265,8 @@
                   </svg>
                 </a>
                 <a href="#contact" class="inline-flex items-center gap-2 rounded-md px-6 py-3 font-medium transition"
-                  style="border: 2px solid rgba(0, 175, 35, 0.539); background: rgba(130, 177, 139, 0.487); color: var(--color-3);">
+                  style="border: 2px solid rgba(0, 175, 35, 0.539); background: rgba(130, 177, 139, 0.487); color: var(--color-3);"
+                  onclick="posthog?.capture('hero_cta_clicked', {cta_label: 'Get in Touch'});">
                   Get in Touch
                 </a>
               </div>
@@ -425,7 +423,8 @@
               <span>See Projects</span>
             </a>
             <a href="mailto:mark_harrison777@yahoo.com"
-              class="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium tracking-tight text-zinc-900 hover:bg-zinc-50 transition">
+              class="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium tracking-tight text-zinc-900 hover:bg-zinc-50 transition"
+              onclick="posthog?.capture('contact_initiated', {location: 'about_section', method: 'email'});">
               <i data-lucide="mail" class="h-4 w-4"></i>
               <span>Email Me</span>
             </a>
@@ -463,7 +462,7 @@
           <article class="group rounded-md border border-zinc-200 bg-white overflow-hidden">
             <a href="https://markusharrison.com/html-email-projects/promo/costco-bd/" target="_blank"
               rel="noopener noreferrer" class="relative overflow-hidden aspect-[2/3] block"
-              onclick="posthog?.capture('project_clicked', {project_name: 'Orbit UI', project_type: 'image'});">
+              onclick="posthog?.capture('project_clicked', {project_name: 'Costco Business Delivery', project_type: 'image'});">
               <img src="assets/img/costco_bd_logo.png" alt="CostcoBD Logo"
                 class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]">
             </a>
@@ -655,7 +654,7 @@
           <article class="group rounded-md border border-zinc-200 bg-white overflow-hidden">
             <a href="https://getmyvucs.myshopify.com/" target="_blank" rel="noopener noreferrer"
               class="relative overflow-hidden aspect-[2/3] block"
-              onclick="posthog?.capture('project_clicked', {project_name: '', project_type: 'image'});">
+              onclick="posthog?.capture('project_clicked', {project_name: 'Nostalgic Vault', project_type: 'image'});">
               <img
                 src="https://getmyvucs.myshopify.com/cdn/shop/files/ok-my-brand-name-is-nostalgic-vault-so-can-you-make-me-a-logo-this-the-letter-nv-in-a-fancy-cursive-lettering.png?height=500&v=1770172021"
                 alt="nv logo" class="w-full h-full object-cover transition duration-500 group-hover:scale-[1.02]">
@@ -671,7 +670,7 @@
               </div>
               <a href="https://getmyvucs.myshopify.com/" target="_blank" rel="noopener noreferrer"
                 class="mt-3 text-lg font-semibold tracking-tight block hover:text-zinc-600 transition"
-                onclick="posthog?.capture('project_clicked', {project_name: '', project_type: 'title'});">
+                onclick="posthog?.capture('project_clicked', {project_name: 'Nostalgic Vault', project_type: 'title'});">
                 <h3>Nostalgic Vault</h3>
               </a>
               <p class="mt-2 text-sm text-zinc-600">A Shopify E-Commerce store, inspired by my wife's business
@@ -829,7 +828,8 @@
               precision and care.</p>
             <div class="mt-4 flex items-center gap-3">
               <a href="https://github.com/markharrison777" target="_blank"
-                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900">
+                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900"
+                onclick="posthog?.capture('social_link_clicked', {platform: 'GitHub'});">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
                   <path
@@ -840,7 +840,8 @@
               </a>
 
               <a href="https://www.linkedin.com/in/markus-harrison-107349138/" target="_blank"
-                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900">
+                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900"
+                onclick="posthog?.capture('social_link_clicked', {platform: 'LinkedIn'});">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -850,7 +851,8 @@
               </a>
 
               <a href="mailto:mark_harrison777@yahoo.com"
-                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900">
+                class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-zinc-300 bg-white text-zinc-700 hover:text-zinc-900"
+                onclick="posthog?.capture('contact_initiated', {location: 'footer_social', method: 'email'});">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
@@ -866,7 +868,8 @@
               <li><a href="#projects" class="hover:text-zinc-900">Projects</a></li>
               <li><a href="#about" class="hover:text-zinc-900">About</a></li>
               <li><a href="#skills" class="hover:text-zinc-900">Skills</a></li>
-              <li><a href="assets/img/Markus_Harrison_resume (2).pdf" class=" hover:text-zinc-900">Download
+              <li><a href="assets/img/Markus_Harrison_resume (2).pdf" class=" hover:text-zinc-900"
+                  onclick="posthog?.capture('resume_downloaded', {location: 'footer'});">Download
                   Resume</a>
               </li>
             </ul>
@@ -876,7 +879,8 @@
             <h4 class="text-base font-semibold tracking-tight">Get in touch</h4>
             <p class="mt-4 text-sm text-zinc-600">Excited to build with you.</p>
             <a href="mailto:mark_harrison777@yahoo.com"
-              class="mt-4 inline-flex items-center gap-2 rounded-md bg-zinc-900 px-4 py-2.5 text-white text-sm font-medium tracking-tight hover:bg-black transition">
+              class="mt-4 inline-flex items-center gap-2 rounded-md bg-zinc-900 px-4 py-2.5 text-white text-sm font-medium tracking-tight hover:bg-black transition"
+              onclick="posthog?.capture('contact_initiated', {location: 'footer_cta', method: 'email'});">
               <i data-lucide="send" class="h-4 w-4"></i>
               <span>Email Me</span>
             </a>
